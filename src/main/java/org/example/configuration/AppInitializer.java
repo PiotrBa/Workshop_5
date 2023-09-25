@@ -1,12 +1,12 @@
 package org.example.configuration;
 
-import com.apple.eawt.Application;
+import org.example.App;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{Application.class};
+        return new Class[]{App.class};
     }
 
     @Override
